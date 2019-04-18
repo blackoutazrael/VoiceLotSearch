@@ -7,10 +7,12 @@ FF14（オンラインゲーム）のプレイ環境改善を目的に作成し�
 
 ### 【流れ】
 1. Google Spreadsheet上に、アイテム取得希望順と取得状況を表で管理
+![LotManageSheetImage.png](https://raw.githubusercontent.com/blackoutazrael/VoiceLotSearch/images/WS000002.BMP?token=ABUHPRWLGWKS46UCRYLMR4K4XBGT6 "LotManageSheetImage")
+
 2. Google Home から、分配したいアイテム情報を入力
 3. GASでSheetから、各メンバーのアイテム取得状況を取得
-4. PHPで3.と4.データをぶつけて、アイテム取得優先権保持者を取得
+4. PHPで3.と4.で取得したデータをぶつけて、アイテム取得優先権保持者を取得
 5. 結果をGoogle Homeで返答
 
-
-まだテスト段階のため、返答が少しダサいです笑
+### 【動作の様子】
+[実演(youtube)](https://youtu.be/EX3qJbQnVzk)

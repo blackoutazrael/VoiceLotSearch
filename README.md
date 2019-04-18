@@ -7,7 +7,7 @@ FF14（オンラインゲーム）のプレイ環境改善を目的に作成し�
 
 ### 【流れ】
 1. Google Spreadsheet上に、アイテム取得希望順と取得状況を表で管理
-![LotManageSheetImage.png](https://raw.githubusercontent.com/blackoutazrael/VoiceLotSearch/images/WS000002.BMP?token=ABUHPRWLGWKS46UCRYLMR4K4XBGT6 "LotManageSheetImage")
+![LotManageSheetImage.png](https://raw.githubusercontent.com/blackoutazrael/VoiceLotSearch/images/WS000002.BMP "LotManageSheetImage")
 
 2. Google Home から、分配したいアイテム情報を入力
 3. GASでSheetから、各メンバーのアイテム取得状況を取得

@@ -13,22 +13,18 @@ $GhomeParam = $json["queryResult"]["parameters"];
 // $GhomeParam = array("JOBS" => "ヒーラー", "EQUIP" => "手");
 
 // ロット権のある人を判定
+$fulfillmentText = "";
 try {
     $controller = new LotController();
     $fulfillmentText = $controller->LotSearch(["job" => $GhomeParam["JOBS"], "equip" => $GhomeParam["EQUIP"]]);
-
-    $contents = 
-            [
-                "fulfillmentText" => $fulfillmentText 
-                , "source" => "EchoService"
-            ];
 } catch (\Throwable $th) {
-    $contents = 
-            [
-                "fulfillmentText" => $th->getMessage()
+    $fulfillmentText = $th->getMessage();
+}
+
+$contents = [
+                "fulfillmentText" => $fulfillmentText
                 , "source" => "EchoService"
             ];
-}
 
 $res = json_encode($contents, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 echo $res;

@@ -21,7 +21,6 @@ class LotController extends MultiLangUtil{
         // $this->multiUtil = new MultiLangmultiUtil();
     }
 
-    // DISCORDから呼んだ時
     // 英語 : $param = ["job" => "dragoon", "equip" => "head"]
     // 日本語 : $param = ["job" => "竜", "equip" => "頭"]
     function LotSearch($param){
@@ -71,7 +70,7 @@ class LotController extends MultiLangUtil{
         return "";
     }
 
-    // ロット権利者取得処理を実行
+    // 第一優先者、第二優先者を取得
     function Search($discordParam){
         $namesArray = array();
         // 優先権１ ロットできる人を取得
@@ -87,7 +86,7 @@ class LotController extends MultiLangUtil{
         return $namesArray;
     }
 
-    // ロット権利保持者の検索処理
+    // ロット権利者の検索処理
     function GetName($eParam, $dParam, $order){
 
         if(in_array($dParam["equip"], $this->body) || array_key_exists($dParam["equip"], $this->body)){

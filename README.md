@@ -15,7 +15,7 @@ FF14（オンラインゲーム）のプレイ環境改善を目的に作成し�
 5. 結果をGoogle Homeで返答
 
 ### 【環境】
-GCPのApp Engineを使用
+GCPのApp Engine上で稼働
 
 ### 【動作の様子】
 [実演(youtube)](https://youtu.be/EX3qJbQnVzk)
